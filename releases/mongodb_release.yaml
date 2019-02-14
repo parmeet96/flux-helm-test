@@ -4,6 +4,9 @@
   metadata:
     name: mongodb
     namespace: test
+  annotations:
+    flux.weave.works/automated: "false"
+    flux.weave.works/tag.chart-image: glob:1.21.*
   spec:
     chartGitPath: mongodb
     releaseName: mongodb-database
